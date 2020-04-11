@@ -27,7 +27,7 @@ class _TailorHomePageState extends State<TailorHomePage> {
     return MaterialApp(
       home: 
       Scaffold(
-        appBar: AppBar(title:Text('darzi')),
+        appBar: AppBar(title:Text('Darzi Dashboard')),
         drawer: new Drawer(
         child: new ListView(
           children: <Widget>[
@@ -50,7 +50,7 @@ class _TailorHomePageState extends State<TailorHomePage> {
               title: new Text("About us"),
               trailing: new Icon(Icons.arrow_upward),
               onTap: (){ 
-                Navigator.of(context).pop();
+                //Navigator.of(context).pop();
                 Navigator.of(context).push(new MaterialPageRoute(
                   builder: (BuildContext context)=>  AboutUs()));
               }
@@ -59,7 +59,7 @@ class _TailorHomePageState extends State<TailorHomePage> {
                 title: new Text("Contact us"),
                 trailing: new Icon(Icons.forum),
                 onTap: (){ 
-                  Navigator.of(context).pop();
+                  //Navigator.of(context).pop();
                   Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context)=>  ContactUs()));
                 }
               ),
