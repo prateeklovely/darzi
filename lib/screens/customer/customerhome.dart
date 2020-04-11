@@ -14,7 +14,7 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(title: Text('customer home page'),),
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.lightBlueAccent,
       body: Center(
         child: Center(
           child: Column(
@@ -26,22 +26,22 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
                   onChanged: (value){
                     _selectedGender=value;
                     switch(value){
-                      case "katol" :
-                      String key='katol';
+                      case "Katol Road" :
+                      String key='Katol Road';
                         Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) => Test(mainkey:key)),
                         );
                         break;
-                      case "narmada" :
-                        String key='narmada';
+                      case "Narmada Colony" :
+                        String key='Narmada Colony';
                         Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) => Test(mainkey:key)),
                         );
                         break;
-                      case "friends" :
-                        String key='friends';
+                      case "Friends Colony" :
+                        String key='Friends Colony';
                         Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) => Test(mainkey:key)),
@@ -59,7 +59,7 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
   }
 }
 List<DropdownMenuItem<String>> _dropDownItem() {
-      List<String> ddl = ["katol", "narmada", "friends"];
+      List<String> ddl = ["Katol Road", "Narmada Colony", "Friends Colony"];
       return ddl.map(
               (value) =>
               DropdownMenuItem(
