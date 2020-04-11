@@ -41,7 +41,7 @@ final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
     return Scaffold(
       resizeToAvoidBottomPadding: true,
       appBar: AppBar(
-        title: Text('data'),
+        title: Text('Stitching Price Details'),
       ),  
       
         floatingActionButton: FloatingActionButton(
