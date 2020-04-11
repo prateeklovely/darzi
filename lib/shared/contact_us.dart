@@ -10,16 +10,16 @@ class ContactUs extends StatelessWidget {
         child: Column(
           children: <Widget>[
             ListTile(
-              leading: Icon(Icons.arrow_right),
+              leading: Icon(Icons.email),
               title: Text("pratikm.cse@sbjit.edu.in",),
                     
             ),
             ListTile(
-              leading: Icon(Icons.arrow_right),
+              leading: Icon(Icons.share),
               title: Text("Share App "),
             ),
             ListTile(
-              leading: Icon(Icons.arrow_right),
+              leading: Icon(Icons.rate_review),
               title: Text("Rate Us "),
             ),            
           ],
